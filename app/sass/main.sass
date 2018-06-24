@@ -1,0 +1,116 @@
+body
+  overflow-x: hidden
+/*...........header...........*/
+.header
+  width: 100%
+  max-width: 1366px
+  padding: 30px 0 75px
+  margin: 0 auto
+  background: url("../img/layer.jpg") no-repeat
+  background-size: cover
+
+  .header__navbar
+    width: 85.57833089311859% /*1169px*/
+    margin: 0 auto 190px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .navigation
+      width: 550px /*47.04875962360992%*/
+      display: flex
+      align-items: center
+      .navigation__list
+        display: flex
+        justify-content: space-between
+        align-items: center
+        li
+          padding: 7px 17px
+          border: 1px solid transparent
+          border-radius: 50px
+          transition: all .5s
+          a
+            color: #fff
+            font: 1em 'Open Sans Regular'
+          &:hover
+            border: 1px solid #fff
+      .navigation__list_responsive
+        display: flex
+        width: 35%
+        height: 100vh
+        background-color: rgba(0, 0, 0, 0.4)
+    .navigation_reponsive
+      width: 35%
+      height: 100vh
+      background-color: rgba(0, 0, 0, 0.4)
+      /*...burger-menu...*/
+      .humburger-menu
+        display: none
+        cursor: pointer
+        .hamburger-line_1
+          display: block
+          width: 20px
+          height: 4px
+          background-color: #fff
+          transition: transform .2s
+        .hamburger-line_1_rotate
+          transform:  rotate(45deg) translate(3px, 2px)
+        .hamburger-line_2
+          display: block
+          width: 20px
+          height: 4px
+          background-color: #fff
+          margin: 3px 0
+        .hamburger-line_2_hidden
+          display: none !important
+        .hamburger-line_3
+          display: block
+          width: 20px
+          height: 4px
+          background-color: #fff
+          transition: transform .2s
+        .hamburger-line_3_rotate
+          transform: rotate(-45deg) translate(1px, 0px)
+  /*...burger-menu_end...*/
+  .header__content
+    margin-bottom: 210px
+    .header__title
+      font: 2.1875em 'SourceSansPro-Light'
+      color: #fff
+      letter-spacing: 7px
+      text-transform: uppercase
+      text-align: center
+      margin-bottom: 30px
+    .header__sub-title
+      font: 1em/28px 'Open Sans Regular'
+      color: #fff
+      letter-spacing: 1px
+      text-align: center
+  .header__wrap-arrow-bottom
+    display: flex
+    justify-content: center
+    align-items: center
+
+    .header__arrow-btn
+      display: inline-block
+      width: 37px
+      height: 37px
+      border-radius: 50%
+      background-color: #19bd9a
+      transition: opacity .3s
+      &:hover
+        opacity: 0.9
+
+      .header__arrow-line-1
+        display: inline-block
+        width: 10px
+        height: 1px
+        background-color: #fff
+        transform: translate(10px, 7px) rotate(45deg)
+      .header__arrow-line-2
+        content: ''
+        display: inline-block
+        width: 10px
+        height: 1px
+        background-color: #fff
+        transform: translate(3px, 7px) rotate(-45deg)
+/*...........header_end...........*/
